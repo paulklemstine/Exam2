@@ -40,9 +40,10 @@ int main()
         //create another student on the heap
         Student* student = new Student(name,gpa);
         student->Display();
+        delete student;
     }
 
-
+    
     (void)_getch();
     return 0;
 }
