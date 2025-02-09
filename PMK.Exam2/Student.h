@@ -12,8 +12,8 @@ private:
 public:
 
 	//setters
-	void SetName(string pName) { m_name = pName; }
-	void setGPA(float pGPA) { m_gpa = pGPA; }
+	void SetName(const string pName) { m_name = pName; }
+	void setGPA(const float pGPA) { m_gpa = pGPA; }
 
 	//display student name and HPA
 	void Display() {
@@ -27,7 +27,7 @@ public:
 	}
 
 	//constructor
-	Student(string pName, float pGpa) {
+	Student(const string pName, const float pGpa) {
 		m_name = pName;
 		m_gpa = pGpa;
 	}
